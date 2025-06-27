@@ -101,7 +101,7 @@ plugins=(
 )
 ```
 
-
+![macos预览图片](/macos/preview/macos.png)
 
 
 
