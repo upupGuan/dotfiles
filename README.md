@@ -137,7 +137,22 @@ neofetch
 
 ![Linux终端预览图](./Linux/preview/linuxshell.png)
 
+七、安装lazyvim
+首先安装lazyvim的要求，下载所需要的环境
+```
+http://www.lazyvim.org/
+```
+注意：Ubuntu默认sudo apt install neovim 版本非常低，需要安装新版本，用如下方式：
+```
+# 1. 添加 unstable PPA（获取最新开发版）
+sudo add-apt-repository ppa:neovim-ppa/stable
 
+# 2. 更新软件源并安装
+sudo apt update
+sudo apt install neovim
 
+# 3. 验证版本（安装后执行）
+nvim --version  # 输出应含 "NVIM v0.10.x" 等新版本号:cite[2]:cite[7]
+```
 
 
