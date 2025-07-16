@@ -142,17 +142,52 @@ neofetch
 ```
 http://www.lazyvim.org/
 ```
-注意：Ubuntu默认sudo apt install neovim 版本非常低，需要安装新版本，用如下方式：
+![lazyvim要求](./assets/lazyvimrequirements.png)
+注意：Ubuntu默认sudo apt install neovim 版本非常低，需要0.9以上需要unstable方式，用如下方式：
 ```
 # 1. 添加 unstable PPA（获取最新开发版）
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository ppa:neovim-ppa/unstable
 
 # 2. 更新软件源并安装
 sudo apt update
 sudo apt install neovim
 
 # 3. 验证版本（安装后执行）
-nvim --version  # 输出应含 "NVIM v0.10.x" 等新版本号:cite[2]:cite[7]
+nvim --version   保证版本>-0.9 才能实用lazyvim
+```
+按照lazyvim所给的要求，逐一安装：  
+安装Nerd Font字体（Linux常见安装字体方法）
+
+```
+1）下载字体
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip  
+2）解压(可能需要先创建share/fonts/)
+unzip JetBrainsMono.zip -d ~/.local/share/fonts  # 用户级安装
+或系统级安装（需 sudo）：
+sudo unzip JetBrainsMono.zip -d /usr/share/fonts
+3）刷新字体库
+fc-cache -fv  # 强制刷新
+```
+lazygit安装，参考https://github.com/jesseduffield/lazygit?tab=readme-ov-file#debian-and-ubuntu
+![lazygit](./assets/lazygit.png)
+
+安装gcc，如果已经有了就不需要安装了
+```
+sudo apt install gcc
+gcc --version
 ```
 
+安装curl ,一般都有，不用安装
 
+安装fzf,ripgrep,fd
+```
+sudo apt install fzf
+sudo apt-get install ripgrep
+sudo apt install fd-find
+```
+安装lazyvim
+http://www.lazyvim.org/installation
+
+# 感谢
+[1]https://github.com/Shaobin-Jiang/dotfiles
+[2]https://github.com/charleschetty/dotfile
