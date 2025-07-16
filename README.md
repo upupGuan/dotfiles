@@ -188,6 +188,8 @@ sudo apt install fd-find
 安装lazyvim
 http://www.lazyvim.org/installation
 
+![lazyvim成功](./assets/lazyvimsuccess.png)
+
 # 感谢
 [1]https://github.com/Shaobin-Jiang/dotfiles
 [2]https://github.com/charleschetty/dotfile
